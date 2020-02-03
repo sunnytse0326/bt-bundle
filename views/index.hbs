@@ -35,21 +35,22 @@
                     </div>
 
                     <div class="radio-input">
-                        <input id="card" type="radio" name="payment" checked>
-                        Pay with credit card
+                        <input id="hoisted-field-radio" type="radio" name="payment" checked>
+                        Pay with Hoisted Field
                     </div>
                 </label>
 
                 <label for="paypal" class="method paypal">
                     <img src="https://designmodo.com/demo/checkout-panel/img/paypal_logo.png" />
                     <div class="radio-input">
-                        <input id="paypal" type="radio" name="payment">
-                        Pay with PayPal
+                        <input id="dropin-ui-radio" type="radio" name="payment">
+                        Pay with Drop-in UI
                     </div>
                 </label>
             </div>
 
-            <form class="needs-validation" novalidate="">
+            <div id="hoisted-field" >
+                <form class="needs-validation" novalidate="">
                 <div class="row">
                     <div class="col-sm-6 mb-3">
                         <label for="cc-name">Name on card</label>
@@ -91,7 +92,11 @@
                         </div>
                     </div>
                 </div>
-            </form>
+                </form>
+            </div>
+
+            <div id="ui-dropin" class="dropin-ui-body" style="display: none;"></div>
+
         </div>
 
         <div class="bar-panel-footer">
