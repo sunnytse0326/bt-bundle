@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
   });
 
   gateway.clientToken.generate({
-    customerId: ""
+    customerId: "test111"
   }, (err, response) => {
     res.send(response.clientToken);
   })
