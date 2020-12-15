@@ -29,7 +29,7 @@ router.post('/', function(req, res, next) {
   //       res.status(500).send(error);
   //     }
   // });
-  res.send(req.body.paymentMethodNonce)
+  res.send({paymentMethodNonce: req.body.paymentMethodNonce})
 });
 
 module.exports = router;
