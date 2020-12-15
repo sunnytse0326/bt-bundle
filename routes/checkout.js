@@ -15,7 +15,7 @@ router.post('/', function(req, res, next) {
   var nonceFromTheClient = req.body.paymentMethodNonce;
 
   console.log("nonce")
-  console.log(body)
+  console.log(req.body)
   console.log(req.body.paymentMethodNonce)
   // Create a new transaction for $10
   var newTransaction = gateway.transaction.sale({
