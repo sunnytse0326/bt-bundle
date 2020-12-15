@@ -27,8 +27,8 @@ app.use('/users', usersRouter);
 var checkout = require('./routes/checkout');
 app.use('/checkout', checkout);
 
-var getauth = require('./routes/getauth');
-app.use('/getauth', getauth);
+var getoauth = require('./routes/getoauth');
+app.use('/getoauth', getoauth);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
